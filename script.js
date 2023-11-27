@@ -1,7 +1,11 @@
 function validEmail(str) {
-  //your JS code here.
-}
+    // Regular expression for validating an Email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Do not change the code below.
+    // Test the string against the regular expression
+    return emailRegex.test(str);
+}
+ 
+// Example usage:
 const str = prompt("Enter an email address.");
 alert(validEmail(str));
